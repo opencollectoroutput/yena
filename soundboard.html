@@ -18,7 +18,7 @@
         <a href="soundboard.html">Sound Board</a>
     </nav>
 
-    <h1>🔊 Yena Soundboard 🔊</h1>
+    <h1>🕪 Yena Soundboard 🕪</h1>
 
     <div class="main-content" id="soundboard" style="
     display: grid; 
@@ -34,29 +34,38 @@
         <p><a href="https://forms.gle/CrTtEpadRJcYcnCH9">Submit sounds for the sound board</a></p>
     </footer>
 
-
-
     <script>
         (function () {
             //const dir = "https://raw.githubusercontent.com/opencollectoroutput/yena/master/soundboard/"
             const dir = "soundboard/"
             const sounds = [
                 { name: "Asian", file: "Asian.mp3" },
+                { name: "Banned", file: "Banned.mp3" },
                 { name: "Be Kind", file: "Be Kind.mp3" },
                 { name: "Birth", file: "Birth.mp3" },
-                { name: "Become streamers", file: "Chat should become streamers.mp3" },
+                { name: "Can't Proove It", file: "Can't Proove It.mp3" },
+                { name: "Chat should become streamers", file: "Chat should become streamers.mp3" },
                 { name: "Cheek Puff", file: "Cheek Puff.mp3" },
+                { name: "Chill", file: "Chill.mp3" },
                 { name: "Clean As You Go", file: "Clean As You Go.mp3" },
                 { name: "Come inside", file: "Come inside.mp3" },
                 { name: "Come", file: "Come.mp3" },
+                { name: "Cooked", file: "Cooked.mp3" },
                 { name: "Crime", file: "Crime.mp3" },
+                { name: "Cursed", file: "Cursed.mp3" },
+                { name: "Deck Size", file: "Deck Size.mp3" },
                 { name: "Destroyer", file: "Destroyer.mp3" },
                 { name: "Don't Choke", file: "Don't Choke.mp3" },
                 { name: "Epic Kazoo", file: "Epic Kazoo.mp3" },
                 { name: "Esbesbiss", file: "Esbesbiss.mp3" },
+                { name: "Favourites", file: "Favourites.mp3" },
+                { name: "Fire Alarm", file: "Fire Alarm.mp3" },
                 { name: "First Burp on twitch.tv", file: "First Burp on twitch.tv.mp3" },
                 { name: "Flex", file: "Flex.mp3" },
+                { name: "Florida Man", file: "Florida Man.mp3" },
+                { name: "Full Experience", file: "Full Experience.mp3" },
                 { name: "Gag Reflex", file: "Gag Reflex.mp3" },
+                { name: "Goodbye", file: "Goodbye.mp3" },
                 { name: "Grandpa", file: "Grandpa.mp3" },
                 { name: "Gross", file: "Gross.mp3" },
                 { name: "Hi 5", file: "Hi 5.mp3" },
@@ -64,7 +73,9 @@
                 { name: "Hitting Yourself", file: "Hitting Yourself.mp3" },
                 { name: "Holy Shihahah", file: "Holy Shihahah.mp3" },
                 { name: "Homies", file: "Homies.mp3" },
+                { name: "Idolize", file: "Idolize.mp3" },
                 { name: "If I die I die", file: "If I die I die.mp3" },
+                { name: "Jarvis", file: "Jarvis.mp3" },
                 { name: "Jeff", file: "Jeff.mp3" },
                 { name: "Jesus Christ", file: "Jesus Christ.mp3" },
                 { name: "Jumpscare", file: "Jumpscare.mp3" },
@@ -79,28 +90,41 @@
                 { name: "Mpreg", file: "Mpreg.mp3" },
                 { name: "No More Feet", file: "No More Feet.mp3" },
                 { name: "Normal", file: "Normal.mp3" },
+                { name: "Not Boobs", file: "Not Boobs.mp3" },
                 { name: "Not like this", file: "Not like this.mp3" },
+                { name: "Not Straight", file: "Not Straight.mp3" },
+                { name: "Not That Old", file: "Not That Old.mp3" },
                 { name: "Not What I Meant", file: "Not What I Meant.mp3" },
                 { name: "Oh God", file: "Oh God.mp3" },
                 { name: "Oh No", file: "Oh No.mp3" },
                 { name: "Ohhh Nooo", file: "Ohhh Nooo.mp3" },
                 { name: "On Stream?", file: "On Stream_.mp3" },
                 { name: "On the Record", file: "On the Record.mp3" },
-                { name: "OOooOOoo", file: "OOoooOOoo.mp3" },
+                { name: "One Second", file: "One Second.mp3" },
+                { name: "OOoooOOoo", file: "OOoooOOoo.mp3" },
                 { name: "Peg", file: "Peg.mp3" },
+                { name: "Recharge", file: "Recharge.mp3" },
+                { name: "Rod", file: "Rod.mp3" },
                 { name: "Scream", file: "Scream.mp3" },
                 { name: "Source?", file: "Source_.mp3" },
+                { name: "Stick", file: "Stick.mp3" },
+                { name: "Sub-species", file: "Sub-species.mp3" },
                 { name: "Super Normal", file: "Super Normal.mp3" },
                 { name: "Tattoo", file: "Tattoo.mp3" },
+                { name: "temp", file: "temp" },
                 { name: "Thankyou", file: "Thankyou.mp3" },
                 { name: "That's Crazy", file: "That's Crazy.mp3" },
+                { name: "Tortilla", file: "Tortilla.mp3" },
+                { name: "Umazing", file: "Umazing.mp3" },
                 { name: "Uvlovloov", file: "Uvlovloov.mp3" },
                 { name: "Very Not Good", file: "Very Not Good.mp3" },
                 { name: "What does'nt kill you.", file: "What does'nt kill you..mp3" },
                 { name: "White Girl", file: "White Girl.mp3" },
                 { name: "Wipe", file: "Wipe.mp3" },
                 { name: "Woah, a Horse", file: "Woah, a Horse.mp3" },
-                { name: "Woman", file: "Woman.mp3" }
+                { name: "Woman", file: "Woman.mp3" },
+                { name: "Wurmple", file: "Wurmple.mp3" },
+
             ];
 
             const container = document.getElementById('soundboard');
