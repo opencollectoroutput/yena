@@ -47,7 +47,7 @@ nav {
 nav a {
     display: inline-block;
     padding: 7px 30px;
-    color: white;
+    color: black;
     background-color: #FF7526;  /* Button color */
     text-decoration: none;
     border-radius: 8px;
