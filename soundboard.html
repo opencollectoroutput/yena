@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Birthday</a>
+        <a href="soundboard.html">Sound Board</a>
+    </nav>
+
+    <h1>Soundboard</h1>
+
+    <div class="main-content" id="soundboard" style="
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    width: 95%;
+    max-width: 2000px;
+    margin: 20px auto;
+    box-sizing: border-box;">
+    </div>
+
+    <footer class="footer">
+        <p><a href="https://forms.gle/CrTtEpadRJcYcnCH9">Submit sounds for the sound board</a></p>
+    </footer>
+
+
+
+    <script>
+        (function () {
+            const dir = "https://raw.githubusercontent.com/opencollectoroutput/yena/master/soundboard/"
+            const sounds = [
+                { name: "Asian", file: "Asian.mp3" },
+                { name: "Be Kind", file: "Be Kind.mp3" },
+                { name: "Birth", file: "Birth.mp3" },
+                { name: "Become streamers", file: "Chat should become streamers.mp3" },
+                { name: "Cheek Puff", file: "Cheek Puff.mp3" },
+                { name: "Clean As You Go", file: "Clean As You Go.mp3" },
+                { name: "Come inside", file: "Come inside.mp3" },
+                { name: "Come", file: "Come.mp3" },
+                { name: "Crime", file: "Crime.mp3" },
+                { name: "Destroyer", file: "Destroyer.mp3" },
+                { name: "Don't Choke", file: "Don't Choke.mp3" },
+                { name: "Epic Kazoo", file: "Epic Kazoo.mp3" },
+                { name: "Esbesbiss", file: "Esbesbiss.mp3" },
+                { name: "First Burp on twitch.tv", file: "First Burp on twitch.tv.mp3" },
+                { name: "Flex", file: "Flex.mp3" },
+                { name: "Gag Reflex", file: "Gag Reflex.mp3" },
+                { name: "Grandpa", file: "Grandpa.mp3" },
+                { name: "Gross", file: "Gross.mp3" },
+                { name: "Hi 5", file: "Hi 5.mp3" },
+                { name: "High Note", file: "High Note.mp3" },
+                { name: "Hitting Yourself", file: "Hitting Yourself.mp3" },
+                { name: "Holy Shihahah", file: "Holy Shihahah.mp3" },
+                { name: "Homies", file: "Homies.mp3" },
+                { name: "If I die I die", file: "If I die I die.mp3" },
+                { name: "Jeff", file: "Jeff.mp3" },
+                { name: "Jesus Christ", file: "Jesus Christ.mp3" },
+                { name: "Jumpscare", file: "Jumpscare.mp3" },
+                { name: "Laugh 1", file: "Laugh 1.mp3" },
+                { name: "Laugh 2", file: "Laugh 2.mp3" },
+                { name: "Laugh 3", file: "Laugh 3.mp3" },
+                { name: "Laugh 4", file: "Laugh 4.mp3" },
+                { name: "Listen Here Bucko", file: "Listen Here Bucko.mp3" },
+                { name: "Live?", file: "Live_.mp3" },
+                { name: "Looking", file: "Looking.mp3" },
+                { name: "Meow", file: "Meow.mp3" },
+                { name: "Mpreg", file: "Mpreg.mp3" },
+                { name: "No More Feet", file: "No More Feet.mp3" },
+                { name: "Normal", file: "Normal.mp3" },
+                { name: "Not like this", file: "Not like this.mp3" },
+                { name: "Not What I Meant", file: "Not What I Meant.mp3" },
+                { name: "Oh God", file: "Oh God.mp3" },
+                { name: "Oh No", file: "Oh No.mp3" },
+                { name: "Ohhh Nooo", file: "Ohhh Nooo.mp3" },
+                { name: "On Stream?", file: "On Stream_.mp3" },
+                { name: "On the Record", file: "On the Record.mp3" },
+                { name: "OOooOOoo", file: "OOoooOOoo.mp3" },
+                { name: "Peg", file: "Peg.mp3" },
+                { name: "Scream", file: "Scream.mp3" },
+                { name: "Source?", file: "Source_.mp3" },
+                { name: "Super Normal", file: "Super Normal.mp3" },
+                { name: "Tattoo", file: "Tattoo.mp3" },
+                { name: "Thankyou", file: "Thankyou.mp3" },
+                { name: "That's Crazy", file: "That's Crazy.mp3" },
+                { name: "Uvlovloov", file: "Uvlovloov.mp3" },
+                { name: "Very Not Good", file: "Very Not Good.mp3" },
+                { name: "What does'nt kill you.", file: "What does'nt kill you..mp3" },
+                { name: "White Girl", file: "White Girl.mp3" },
+                { name: "Wipe", file: "Wipe.mp3" },
+                { name: "Woah, a Horse", file: "Woah, a Horse.mp3" },
+                { name: "Woman", file: "Woman.mp3" }
+            ];
+
+            const container = document.getElementById('soundboard');
+
+            if (!container) return;
+
+            sounds.forEach(sound => {
+                const btn = document.createElement('button');
+                btn.textContent = sound.name;
+                btn.style.backgroundColor = '#FF7526';
+                btn.style.color = 'black';
+                btn.style.border = 'none';
+                btn.style.padding = '20px';
+                btn.style.fontSize = '16px';
+                btn.style.fontFamily = "'Permanent Marker', cursive";
+                btn.style.cursor = 'pointer';
+                btn.style.borderRadius = '8px';
+                btn.style.transition = 'background-color 0.2s';
+
+                btn.onmouseover = () => btn.style.backgroundColor = '#CC4A04';
+                btn.onmouseout = () => btn.style.backgroundColor = '#FF7526';
+
+                btn.onclick = () => {
+                    const audio = new Audio(dir + sound.file);
+                    btn.classList.add('pressed');
+                    audio.play();
+                    audio.onended = () => {
+                        btn.classList.remove('pressed');
+                    };
+                };
+
+                container.appendChild(btn);
+            });
+        })();
+    </script>
+</body>
+
+</html>

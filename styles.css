@@ -1,0 +1,96 @@
+body{
+    display: block;
+    flex-direction: column;  
+    height: 100vh;       
+    margin: 0;
+    background: #FDBA74;
+    text-align: centre;
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+    color: black;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 72px;
+    margin: 25px;
+}
+
+.pressed {
+    transform: translateY(4px); /* Moves the button down to show it's pressed */
+    box-shadow: 0 6px #666, 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: #CC4A04 !important;
+}
+
+
+.footer {
+    background-color: #FF7526; 
+    color: black;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 24px;
+    text-align: center;
+    padding: 0px 0;
+    position: relative;
+}
+
+
+nav {
+    background-color: #FF7526;
+    padding: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+nav a {
+    display: inline-block;
+    padding: 7px 30px;
+    color: white;
+    background-color: #FF7526;  /* Button color */
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 24px;
+    text-align: center;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+
+nav a:hover {
+    background-color: #CC4A04;  /* Darker orange on hover */
+    //transform: scale(1.1);  /* Slightly increase size for pop-out effect */
+    //box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);  /* Shadow effect */
+}
+
+
+nav a:active {
+    background-color: #B03E00;  /* Darker color when pressed */
+    transform: translateY(4px);  /* "Press" effect (moves down slightly) */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+}
+
+.centered-image {
+    width: 10%;  /* Set width to 30% of the page */
+    aspect-ratio: 1 / 1;  /* Maintain a 1:1 aspect ratio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 0;
+}
+
+.centered-image img {
+    width: 100%; /* Make the image fill the div's width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+main {
+      padding: 10px;
+    }
