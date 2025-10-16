@@ -37,13 +37,13 @@
     <script>
         // Hello if you are reading this. Yes i'm aware you can just see this and figure out what it will say on any day, plz no spoilers.
         // I ain't doin anything server-side
-        
+
         // Array of date-message pairs (in DD-MM format)
         const dateMessages = {
             "18-11": "Also, today is the day Yena deleted her channel. Amazing work, 10/10, no notes",
             "25-12": "🎄 Merry Christmas!",
             "01-01": "🎆 Happy New Year!",
-            "19-10": "Also, today is Yena's Anniversary! Happy Anniversary Yena!",
+            "19-10": "Also, today is Yena's 1 year anniversary! One whole year of yeen! Happy Anniversary Yena!",
             "06-06": "Actually it is her birthday, the website lied, please give Yena lots of love today. (Also try not to think about how old you are)",
         };
 
@@ -51,7 +51,7 @@
             "06-06": "NO",
         };
 
-        // Get today's date in YYYY-MM-DD format
+        // Get today's date in DD-MM format
         const today = new Date();
         const mm = String(today.getMonth() + 1).padStart(2, '0'); // Months are zero-based
         const dd = String(today.getDate()).padStart(2, '0');
