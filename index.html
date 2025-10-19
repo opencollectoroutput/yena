@@ -52,7 +52,7 @@
         };
 
         // Get today's date in DD-MM format
-        const today = new Date();
+        const today = new Date(new Date().toLocaleString("en-US", {timeZone: "America/Los_Angeles"}));
         const mm = String(today.getMonth() + 1).padStart(2, '0'); // Months are zero-based
         const dd = String(today.getDate()).padStart(2, '0');
         const formattedDate = `${dd}-${mm}`;
