@@ -1,0 +1,11 @@
+normalise to -14LUFS
+render new sounds to folder
+copy files to /soundboard folder
+run .net app
+paste code into soundboard.html - over exsisting list
+alt-shift-f to fix formatting
+save all
+(cd yena if needed)
+git add .
+git commit -m "add sounds"
+git push origin main
